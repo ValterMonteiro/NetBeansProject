@@ -4,6 +4,8 @@
  */
 package Lista01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author usuario
@@ -11,5 +13,17 @@ package Lista01;
 aumento, ao final mostre o valor do aumento e o novo valor do produto.
  */
 public class Ex03 {
-    
+    public static void main(String[] args) {
+        float valor, aumento, novoVlr;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Informe o valor: ");
+        sc = new Scanner(System.in);
+        valor = sc.nextFloat();
+        System.out.println("Informe o % aumento: ");
+        sc = new Scanner(System.in);
+        aumento = sc.nextFloat();
+        
+        System.out.println("O novo valor é: " + (valor + (valor * ((aumento/100)))));
+        
+    }
 }
