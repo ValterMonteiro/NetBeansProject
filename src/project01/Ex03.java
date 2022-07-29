@@ -6,10 +6,19 @@ package project01;
 
 /**
  *
- * @author usuario
+ * @author usuario 
+ * 3 - Fazer um programa que imprima na tela as tabuadas do
+ * número 1 a 9;
  */
 public class Ex03 {
-    /*
-    3 - Fazer um programa que imprima na tela as tabuadas do número 1 a 9;
-     */
+
+    public static void main(String[] args) {
+        for (int i = 1; i <= 9; i++) {
+            for (int j = 1; j <= 10; j++){
+            int r = i * j;
+            System.out.printf("%d x 2 = %d\n", i, r);
+            }
+        }
+
+    }
 }
