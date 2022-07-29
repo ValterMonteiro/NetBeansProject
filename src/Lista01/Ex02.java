@@ -11,5 +11,17 @@ package Lista01;
 7. A média dos números 4, 5 e 6. A soma das duas médias. A média das médias.
  */
 public class Ex02 {
-    
+    public static void main(String[] args) {
+        float med1, med2, somaMed, medMed;
+        
+        med1 = (8+9+7)/3;
+        med2 = (4+5+6)/3;
+        somaMed = med1 + med2;
+        medMed = (med1+med2)/2;
+        
+        System.out.println(med1);
+        System.out.println(med2);
+        System.out.println(somaMed);
+        System.out.println(medMed);
+    }
 }
