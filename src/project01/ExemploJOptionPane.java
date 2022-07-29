@@ -11,17 +11,18 @@ import javax.swing.JOptionPane;
  * @author usuario
  */
 public class ExemploJOptionPane {
+
     public static void main(String[] args) {
-    String nome, aux;
-    float numero;
-    try {
-      nome = JOptionPane.showInputDialog("Entre com o nome");
-      aux = JOptionPane.showInputDialog("Entre com um numero");
-      numero = Float.parseFloat(aux);
-      JOptionPane.showMessageDialog(null, "Nome: " + nome + "\n Número: " + numero);
-    } catch (NumberFormatException erro) {
-      JOptionPane.showMessageDialog(null, "Erro: " + erro.toString());
+        String nome, aux;
+        float numero;
+        try {
+            nome = JOptionPane.showInputDialog("Entre com o nome");
+            aux = JOptionPane.showInputDialog("Entre com um numero");
+            numero = Float.parseFloat(aux);
+            JOptionPane.showMessageDialog(null, "Nome: " + nome + "\n Número: " + numero);
+        } catch (NumberFormatException erro) {
+            JOptionPane.showMessageDialog(null, "Erro: " + erro.toString());
+        }
+        System.exit(0);
     }
-    System.exit(0);
-  }
 }

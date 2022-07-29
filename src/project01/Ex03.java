@@ -11,5 +11,5 @@ package project01;
 public class Ex03 {
     /*
     3 - Fazer um programa que imprima na tela as tabuadas do número 1 a 9;
-    */
+     */
 }
