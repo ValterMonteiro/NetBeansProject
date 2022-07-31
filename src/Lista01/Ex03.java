@@ -23,7 +23,8 @@ public class Ex03 {
         sc = new Scanner(System.in);
         aumento = sc.nextFloat();
         
-        System.out.println("O novo valor é: " + (valor + (valor * ((aumento/100)))));
+        System.out.println("O valor de aumento é: " + (valor * (aumento / 100)) +
+                "\n" + "O novo valor é: " + (valor * (1 + ((aumento/100)))));
         
     }
 }
