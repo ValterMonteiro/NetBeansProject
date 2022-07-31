@@ -4,6 +4,8 @@
  */
 package Lista01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author usuario
@@ -12,5 +14,19 @@ salário de um usuário, calcule a quantidade de salários mínimos que esse usu
 ganha e imprima o resultado.
  */
 public class Ex05 {
-    
+    public static void main(String[] args) {
+        float slrMinimo, seuSlr, qtdSlr;
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Informe o valor do salário mínimo: ");
+        sc = new Scanner(System.in);
+        slrMinimo = sc.nextFloat();
+        
+        System.out.println("Informe o valor do seu salário: ");
+        sc = new Scanner(System.in);
+        seuSlr = sc.nextFloat();
+        
+        qtdSlr = (seuSlr / slrMinimo);
+        System.out.println("Seu salário, equivale a: " + qtdSlr + " do salário mínimo.");
+    }
 }
