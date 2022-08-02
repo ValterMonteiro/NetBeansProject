@@ -4,6 +4,8 @@
  */
 package Lista01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author usuario
@@ -11,5 +13,22 @@ package Lista01;
 números pares e a quantidade de números ímpares.
  */
 public class Ex10 {
-    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int numeros = 0, somaPar = 0, somaImpar = 0;
+        
+        for(int i = 0; i < 10; i ++){
+            System.out.println("Informe um número: ");
+            numeros = sc.nextInt();
+            
+            if(numeros % 2 == 0){
+                somaPar++;
+            }else{
+                somaImpar++;
+            }
+        }
+            System.out.println("Soma par: " + somaPar);
+            System.out.println("Soma impar: " + somaImpar);
+    }
 }
