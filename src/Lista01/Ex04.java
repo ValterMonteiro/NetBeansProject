@@ -19,46 +19,46 @@ public class Ex04 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-//        float ipi,vlr1, vlr2;
-//        int qtd1, qtd2;
-//        
-//        System.out.println("Informe o % IPI: ");
-//        sc = new Scanner(System.in);
-//        ipi = sc.nextInt();
-//        
-//        System.out.println("Informe o valor da peça 1: ");
-//        sc = new Scanner(System.in);
-//        vlr1 = sc.nextFloat();
-//        
-//        System.out.println("Informe quantidade da peça 1: ");
-//        sc = new Scanner(System.in);
-//        qtd1 = sc.nextInt();
-//        
-//        System.out.println("Total: " + ((vlr1 * qtd1)*(1+(ipi/100))));
+        float ipi,vlr1, vlr2;
+        int qtd1, qtd2;
         
-        int qtdPecas, qdt;
-        float vlr, ipi2, total;
-        System.out.println("quantidade de peças: ");
+        System.out.println("Informe o % IPI: ");
         sc = new Scanner(System.in);
-        qtdPecas = sc.nextInt();
-        for( int i = 1; i <= qtdPecas; i++){
-            
-            System.out.println("valor: ");
-            sc = new Scanner(System.in);
-            float vlr = sc.nextFloat();
-            
-            System.out.println("quantidade: ");
-            sc = new Scanner(System.in);
-            int qtd = sc.nextInt();
-            
-            System.out.println("% ipi: ");
-            sc = new Scanner(System.in);
-            float ipi2 = sc.nextFloat();
-            
-        }
-        total = ((vlr * qtd)*(1+(ipi2/100)));
-            total++;
-            System.out.println("Total: " + total);
+        ipi = sc.nextInt();
+        
+        System.out.println("Informe o valor da peça 1: ");
+        sc = new Scanner(System.in);
+        vlr1 = sc.nextFloat();
+        
+        System.out.println("Informe quantidade da peça 1: ");
+        sc = new Scanner(System.in);
+        qtd1 = sc.nextInt();
+        
+        System.out.println("Total: " + ((vlr1 * qtd1)*(1+(ipi/100))));
+        
+//        int qtdPecas, qdt;
+//        float vlr, ipi2, total;
+//        System.out.println("quantidade de peças: ");
+//        sc = new Scanner(System.in);
+//        qtdPecas = sc.nextInt();
+//        for( int i = 1; i <= qtdPecas; i++){
+//            
+//            System.out.println("valor: ");
+//            sc = new Scanner(System.in);
+//            float vlr = sc.nextFloat();
+//            
+//            System.out.println("quantidade: ");
+//            sc = new Scanner(System.in);
+//            int qtd = sc.nextInt();
+//            
+//            System.out.println("% ipi: ");
+//            sc = new Scanner(System.in);
+//            float ipi2 = sc.nextFloat();
+//            
+//        }
+//        total = ((vlr * qtd)*(1+(ipi2/100)));
+//            total++;
+//            System.out.println("Total: " + total);
         
     }
     
