@@ -21,8 +21,8 @@ public class Ex08 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        
-        int idade, medPesoAcima25, medAlturaMenos10, maisVelha = 0, maisNova = 0;
+        String nome = "", nomeMaisVelha = "", nomeMaisNova = "";
+        int idade, medPesoAcima25, medAlturaMenos10, maisVelha = 0, maisNova = 100;
         float peso = 0, somaPeso = 0, somaAltura = 0, altura = 0, pesoMaior25 = 0, alturaMenor10 = 0;
 
         for (int i = 0; i < 2; i++) {
@@ -37,9 +37,11 @@ public class Ex08 {
             idade = sc.nextInt();
             if (idade > maisVelha) {
                 maisVelha = idade;
+                nomeMaisVelha = nome;
             }
             if (idade < maisNova) {
                 maisNova = idade;
+                nomeMaisNova = nome;
             }
             if (idade > 25) {
                 pesoMaior25++;
@@ -53,9 +55,9 @@ public class Ex08 {
                 somaAltura = somaAltura + alturaMenor10;
             }
         }
-            System.out.println("A pessoa mais velha é: " + nome);
-            System.out.println("A pessoa mais nova é: " + nome);
-            medPesoAcima25 = (int) (somaPeso / 2);
-            medAlturaMenos10 = (int) ( somaAltura/ 2);
+            System.out.println("A pessoa mais velha é: " + nomeMaisVelha);
+            System.out.println("A pessoa mais nova é: " + nomeMaisNova);
+//            medPesoAcima25 = (somaPeso / 2);
+//            medAlturaMenos10 = ( somaAltura/ 2);
     }
 }
