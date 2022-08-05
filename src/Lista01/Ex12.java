@@ -11,5 +11,14 @@ package Lista01;
 programa que gere a série até que o valor seja maior que 500.
  */
 public class Ex12 {
-    
+    public static void main(String[] args) {
+        int ant = 0, suc = 1;
+        System.out.println(ant);
+        System.out.println(suc);
+        while(suc <= 500){
+            suc = suc + ant;
+            ant = suc - ant;
+            System.out.println(suc);
+        }
+    }
 }
