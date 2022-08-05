@@ -34,31 +34,15 @@ public class Ex04 {
         sc = new Scanner(System.in);
         qtd1 = sc.nextInt();
         
-        System.out.println("Total: " + ((vlr1 * qtd1)*(1+(ipi/100))));
+        System.out.println("Informe o valor da peça 2: ");
+        sc = new Scanner(System.in);
+        vlr2 = sc.nextFloat();
         
-//        int qtdPecas, qdt;
-//        float vlr, ipi2, total;
-//        System.out.println("quantidade de peças: ");
-//        sc = new Scanner(System.in);
-//        qtdPecas = sc.nextInt();
-//        for( int i = 1; i <= qtdPecas; i++){
-//            
-//            System.out.println("valor: ");
-//            sc = new Scanner(System.in);
-//            float vlr = sc.nextFloat();
-//            
-//            System.out.println("quantidade: ");
-//            sc = new Scanner(System.in);
-//            int qtd = sc.nextInt();
-//            
-//            System.out.println("% ipi: ");
-//            sc = new Scanner(System.in);
-//            float ipi2 = sc.nextFloat();
-//            
-//        }
-//        total = ((vlr * qtd)*(1+(ipi2/100)));
-//            total++;
-//            System.out.println("Total: " + total);
+        System.out.println("Informe quantidade da peça 2: ");
+        sc = new Scanner(System.in);
+        qtd2 = sc.nextInt();
+        
+        System.out.println("Total: " + ((vlr1 * qtd1 + vlr2 * qtd2)*(1+(ipi/100))));       
         
     }
     
