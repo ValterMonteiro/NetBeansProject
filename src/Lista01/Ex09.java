@@ -22,7 +22,7 @@ public class Ex09 {
         System.out.println("Informe o primeiro número: ");
         primeiroNumero = sc.nextInt();
 
-        System.out.println("Informe o segunfo número: ");
+        System.out.println("Informe o segundo número: ");
         segundoNumero = sc.nextInt();
         
         System.out.println("Veja o intervalo entre os números:");
